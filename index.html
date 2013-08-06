@@ -7,18 +7,17 @@
 
   <style>
     .container {
-      min-width: 700px;
-      max-width: 800px;
+      width: 500px;
       height: 400px;
       border-width: 1px;
       border-color: lightblue;
       border-style: solid;
+      margin:10px;
     }
 
-
     .date, .time, .class {
-      padding: 20px;
-      margin-top: 10px;
+      padding: 14px;
+      margin-top: 8px;
       background-color: #e4e4e4;
     }
 
@@ -28,26 +27,74 @@
 
 <body>
 
-<div class="container">
-  <strong>Date: <span id="date-selected">dsd</span></strong> |
-  <strong>Time: <span id="time-selected">dds</span></strong> |
-  <strong>Class: <span id="class-selected">ssd</span></strong>
+<table>
+  <tr>
+    <td>
 
-  <br><br>
 
-  <div class="dates step">
-    <strong>Choose a date</strong>
-  </div>
+      <div class="container class1">
+        <strong>Date: <span id="date-selected">dsd</span></strong> |
+        <strong>Time: <span id="time-selected">dds</span></strong> |
+        <strong>Class: <span id="class-selected">ssd</span></strong>
 
-  <div class="times step">
-    <strong>Choose a time</strong>
-  </div>
+        <br><br>
+        <h3>Introduction to UGO</h3>
 
-  <div class="classes step">
-    <strong>Choose a class</strong>
-  </div>
+        <div class="dates step">
+          <strong>Choose a date</strong>
+        </div>
 
-</div>
+        <div class="times step">
+          <strong>Choose a time</strong>
+        </div>
+
+        <div class="classes step">
+          <strong>Choose a class</strong>
+        </div>
+
+        <div class="completed step">
+          <strong>Congratulations! You have Selected a class</strong>
+        </div>
+      </div>
+
+
+    </td>
+
+
+    <td>
+
+      <div class="container class2">
+        <strong>Date: <span id="date-selected"></span></strong> |
+        <strong>Time: <span id="time-selected"></span></strong> |
+        <strong>Class: <span id="class-selected"></span></strong>
+
+        <br><br>
+        <h3>Greetings in a professional setting</h3>
+
+        <div class="dates step">
+          <strong>Choose a date</strong>
+        </div>
+
+        <div class="times step">
+          <strong>Choose a time</strong>
+        </div>
+
+        <div class="classes step">
+          <strong>Choose a class</strong>
+        </div>
+
+        <div class="completed step">
+          <strong>Congratulations! You have Selected a class</strong>
+        </div>
+      </div>
+
+
+    </td>
+  </tr>
+</table>
+
+
+
 
 
 </body>

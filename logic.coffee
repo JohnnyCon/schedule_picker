@@ -5,9 +5,9 @@ class ClassPicker
     @dates_node   = $(".#{root} > .dates").first()
     @times_node   = $(".#{root} > .times").first()
     @classes_node = $(".#{root} > .classes").first()
-    @date_selected
-    @time_selected
-    @class_selected
+    @date_selected = "none"
+    @time_selected = "none"
+    @class_selected = "none"
 
   initialize: ->
     @state = "dates"
@@ -15,7 +15,7 @@ class ClassPicker
 
   render: ->
     # set visability
-    for node in @root_node.children("step")
+    for node in @root_node.children(".step")
       if $(node).hasClass(@state)
         $(node).show()
       else
@@ -25,79 +25,83 @@ class ClassPicker
       when "dates" then this.renderDates()
       when "times" then this.renderTimes()
       when "classes" then this.renderClasses()
+      when "completed" then this.renderCompleted()
 
-    # this.updateSelections()
+    this.updateSelections()
 
 
   renderDates: ->
-    console.log "in renderDates"
-    console.log(@options)
-    console.log(@options.days)
-
     for day in @options.days
       new_node = $("<a href='#'><div class='date'>#{day.date}</div></a>")
-      new_node.data('test', 'works')
+      new_node.data("choice", day.date)
       @dates_node.append(new_node)
 
     @dates_node.find("a").click (e) =>
       @state = "times"
+      @date_selected = $(e.currentTarget).data('choice')
       e.preventDefault()
       this.render()
 
 
   renderTimes: ->
-    console.log "in renderTimes"
-    console.log(@options)
-    console.log(@options.days[0].times)
-
     for opt in @options.days[0].times
-      @times_node.append("<a href='#'><div class='time'>#{opt.time}</div></a>")
+      new_node = $("<a href='#'><div class='time'>#{opt.time}</div></a>")
+      new_node.data("choice", opt.time)
+      @times_node.append(new_node)
 
     @times_node.find("a").click (e) =>
       @state = "classes"
+      @time_selected = $(e.currentTarget).data('choice')
       e.preventDefault()
       this.render()
 
   renderClasses: ->
-    console.log "in renderClasses"
-    console.log(@options)
-    console.log(@options.days[0].times[0].classes)
-
     for klass in @options.days[0].times[0].classes
-      @classes_node.append("<a href='#'><div class='class'>#{klass.instructor}</div></a>")
+      new_node = $("<a href='#'><div class='class'>#{klass.instructor}</div></a>")
+      new_node.data("choice", klass.instructor)
+      @classes_node.append(new_node)
 
     @classes_node.find("a").click (e) =>
-      @state = "confirm"
+      @state = "completed"
+      @class_selected = $(e.currentTarget).data('choice')
       e.preventDefault()
       this.render()
+
+  renderCompleted: ->
+    # this is where you would put the confirmation screen/buttons etc..
 
 
   updateSelections: ->
     @root_node.find("#date-selected").first().text(this.dateSelected())
+    @root_node.find("#time-selected").first().text(this.timeSelected())
+    @root_node.find("#class-selected").first().text(this.classSelected())
 
 
 
   remove_handlers: (parent_node) ->
-    $(parent_node).find("a").unbind 'click'
+    # $(parent_node).find("a").unbind 'click'
 
 
   dateSelected: ->
-    "None Selected"
+    @date_selected
 
   timeSelected: ->
-    @time_selected ? "None Selected"
+    @time_selected
 
   classSelected: ->
-    @class_selected ? "None Selected"
-
+    @class_selected
 
 
 
 
 
 $(document).ready ->
-  picker = new ClassPicker("container", schedule)
-  picker.initialize()
+  class1 = new ClassPicker("class1", schedule)
+  class1.initialize()
+
+  class1 = new ClassPicker("class2", schedule)
+  class1.initialize()
+
 
 
 
