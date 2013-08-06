@@ -60,14 +60,13 @@ window.ClassPicker = class ClassPicker
     for klass in @options.days[0].times[0].classes
       html = _.template(this.classTemplate())
 
-      new_node = $( html({avatar: klass.avatar, instructor: klass.instructor}) )
-      new_node.data({"choice" : klass.instructor, "class_id" : klass.class_id })
+      new_node = $( html({avatar: klass.avatar, instructor: klass.instructor, class_id: klass.class_id }) )
       @classes_node.append(new_node)
 
     @classes_node.find("a").click (e) =>
       @state = "completed"
       @class_selected = $(e.currentTarget).data('choice')
-      @class_id = $(e.currentTarget).data('class_id')
+      @class_id = $(e.currentTarget).data('class-id')
       e.preventDefault()
       this.render()
 
@@ -87,7 +86,7 @@ window.ClassPicker = class ClassPicker
 
 
   classTemplate: ->
-    "<a href='#'>
+    "<a href='#' data-choice='<%= instructor %>' data-class-id='<%= class_id %>'>
         <div class='avatar'>
           <img src='<%= avatar %>' width='70' height='80' />
           <div class='class'><%= instructor %></div>

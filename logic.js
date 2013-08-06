@@ -92,18 +92,15 @@
         html = _.template(this.classTemplate());
         new_node = $(html({
           avatar: klass.avatar,
-          instructor: klass.instructor
+          instructor: klass.instructor,
+          class_id: klass.class_id
         }));
-        new_node.data({
-          "choice": klass.instructor,
-          "class_id": klass.class_id
-        });
         this.classes_node.append(new_node);
       }
       return this.classes_node.find("a").click(function(e) {
         _this.state = "completed";
         _this.class_selected = $(e.currentTarget).data('choice');
-        _this.class_id = $(e.currentTarget).data('class_id');
+        _this.class_id = $(e.currentTarget).data('class-id');
         e.preventDefault();
         return _this.render();
       });
@@ -120,7 +117,7 @@
     ClassPicker.prototype.remove_handlers = function(parent_node) {};
 
     ClassPicker.prototype.classTemplate = function() {
-      return "<a href='#'>        <div class='avatar'>          <img src='<%= avatar %>' width='70' height='80' />          <div class='class'><%= instructor %></div>        </div>      </a>    ";
+      return "<a href='#' data-choice='<%= instructor %>' data-class-id='<%= class_id %>'>        <div class='avatar'>          <img src='<%= avatar %>' width='70' height='80' />          <div class='class'><%= instructor %></div>        </div>      </a>    ";
     };
 
     ClassPicker.prototype.dateSelected = function() {
