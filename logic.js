@@ -1,7 +1,7 @@
 (function() {
   var ClassPicker;
 
-  ClassPicker = (function() {
+  window.ClassPicker = ClassPicker = (function() {
     function ClassPicker(root, options) {
       this.root = root;
       this.options = options;
@@ -12,6 +12,7 @@
       this.date_selected = "none";
       this.time_selected = "none";
       this.class_selected = "none";
+      this.class_id = 0;
     }
 
     ClassPicker.prototype.initialize = function() {
@@ -89,12 +90,16 @@
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         klass = _ref[_i];
         new_node = $("<a href='#'><div class='class'>" + klass.instructor + "</div></a>");
-        new_node.data("choice", klass.instructor);
+        new_node.data({
+          "choice": klass.instructor,
+          "class_id": klass.class_id
+        });
         this.classes_node.append(new_node);
       }
       return this.classes_node.find("a").click(function(e) {
         _this.state = "completed";
         _this.class_selected = $(e.currentTarget).data('choice');
+        _this.class_id = $(e.currentTarget).data('class_id');
         e.preventDefault();
         return _this.render();
       });
@@ -122,16 +127,12 @@
       return this.class_selected;
     };
 
+    ClassPicker.prototype.classId = function() {
+      return this.class_id;
+    };
+
     return ClassPicker;
 
   })();
-
-  $(document).ready(function() {
-    var class1;
-    class1 = new ClassPicker("class1", schedule);
-    class1.initialize();
-    class1 = new ClassPicker("class2", schedule);
-    return class1.initialize();
-  });
 
 }).call(this);

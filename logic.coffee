@@ -1,5 +1,5 @@
 
-class ClassPicker
+window.ClassPicker = class ClassPicker
   constructor: (@root, @options) ->
     @root_node    = $(".#{root}").first()
     @dates_node   = $(".#{root} > .dates").first()
@@ -8,6 +8,7 @@ class ClassPicker
     @date_selected = "none"
     @time_selected = "none"
     @class_selected = "none"
+    @class_id = 0
 
   initialize: ->
     @state = "dates"
@@ -58,12 +59,13 @@ class ClassPicker
   renderClasses: ->
     for klass in @options.days[0].times[0].classes
       new_node = $("<a href='#'><div class='class'>#{klass.instructor}</div></a>")
-      new_node.data("choice", klass.instructor)
+      new_node.data({"choice" : klass.instructor, "class_id" : klass.class_id })
       @classes_node.append(new_node)
 
     @classes_node.find("a").click (e) =>
       @state = "completed"
       @class_selected = $(e.currentTarget).data('choice')
+      @class_id = $(e.currentTarget).data('class_id')
       e.preventDefault()
       this.render()
 
@@ -91,16 +93,11 @@ class ClassPicker
   classSelected: ->
     @class_selected
 
+  classId: ->
+    @class_id
 
 
 
-
-$(document).ready ->
-  class1 = new ClassPicker("class1", schedule)
-  class1.initialize()
-
-  class1 = new ClassPicker("class2", schedule)
-  class1.initialize()
 
 
 

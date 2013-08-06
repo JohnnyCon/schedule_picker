@@ -33,9 +33,9 @@
 
 
       <div class="container class1">
-        <strong>Date: <span id="date-selected">dsd</span></strong> |
-        <strong>Time: <span id="time-selected">dds</span></strong> |
-        <strong>Class: <span id="class-selected">ssd</span></strong>
+        <strong>Date: <span id="date-selected"></span></strong> |
+        <strong>Time: <span id="time-selected"></span></strong> |
+        <strong>Class: <span id="class-selected"></span></strong>
 
         <br><br>
         <h3>Introduction to UGO</h3>
@@ -94,7 +94,18 @@
 </table>
 
 
+<script type="text/javascript">
 
+  $(document).ready(function() {
+
+    class1 = new ClassPicker("class1", schedule);
+    class1.initialize();
+
+    class2 = new ClassPicker("class2", schedule);
+    class2.initialize();
+  });
+
+</script>
 
 
 </body>
