@@ -48,36 +48,40 @@
     };
 
     ClassPicker.prototype.renderDates = function() {
-      var day, new_node, _i, _len, _ref,
+      var day, html, new_node, _i, _len, _ref,
         _this = this;
+      html = _.template(this.selectDatesTemplate());
       _ref = this.options.days;
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         day = _ref[_i];
-        new_node = $("<a href='#'><div class='date'>" + day.date + "</div></a>");
-        new_node.data("choice", day.date);
+        new_node = $(html({
+          date: day.date
+        }));
         this.dates_node.append(new_node);
       }
       return this.dates_node.find("a").click(function(e) {
         _this.state = "times";
-        _this.date_selected = $(e.currentTarget).data('choice');
+        _this.date_selected = $(e.currentTarget).data('selection');
         e.preventDefault();
         return _this.render();
       });
     };
 
     ClassPicker.prototype.renderTimes = function() {
-      var new_node, opt, _i, _len, _ref,
+      var html, new_node, opt, _i, _len, _ref,
         _this = this;
+      html = _.template(this.selectTimesTemplate());
       _ref = this.options.days[0].times;
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         opt = _ref[_i];
-        new_node = $("<a href='#'><div class='time'>" + opt.time + "</div></a>");
-        new_node.data("choice", opt.time);
+        new_node = $(html({
+          time: opt.time
+        }));
         this.times_node.append(new_node);
       }
       return this.times_node.find("a").click(function(e) {
         _this.state = "classes";
-        _this.time_selected = $(e.currentTarget).data('choice');
+        _this.time_selected = $(e.currentTarget).data('selection');
         e.preventDefault();
         return _this.render();
       });
@@ -86,10 +90,10 @@
     ClassPicker.prototype.renderClasses = function() {
       var html, klass, new_node, _i, _len, _ref,
         _this = this;
+      html = _.template(this.selectClassesTemplate());
       _ref = this.options.days[0].times[0].classes;
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         klass = _ref[_i];
-        html = _.template(this.classTemplate());
         new_node = $(html({
           avatar: klass.avatar,
           instructor: klass.instructor,
@@ -99,7 +103,7 @@
       }
       return this.classes_node.find("a").click(function(e) {
         _this.state = "completed";
-        _this.class_selected = $(e.currentTarget).data('choice');
+        _this.class_selected = $(e.currentTarget).data('selection');
         _this.class_id = $(e.currentTarget).data('class-id');
         e.preventDefault();
         return _this.render();
@@ -116,8 +120,16 @@
 
     ClassPicker.prototype.remove_handlers = function(parent_node) {};
 
-    ClassPicker.prototype.classTemplate = function() {
-      return "<a href='#' data-choice='<%= instructor %>' data-class-id='<%= class_id %>'>        <div class='avatar'>          <img src='<%= avatar %>' width='70' height='80' />          <div class='class'><%= instructor %></div>        </div>      </a>    ";
+    ClassPicker.prototype.selectDatesTemplate = function() {
+      return "<a href='#' data-selection='<%= date %>'>      <div class='date'><%= date %></div>     </a>    ";
+    };
+
+    ClassPicker.prototype.selectTimesTemplate = function() {
+      return "<a href='#' data-selection='<%= time %>'>      <div class='time'><%= time %></div>     </a>    ";
+    };
+
+    ClassPicker.prototype.selectClassesTemplate = function() {
+      return "<a href='#' data-selection='<%= instructor %>' data-class-id='<%= class_id %>'>        <div class='avatar'>          <img src='<%= avatar %>' width='70' height='80' />          <div class='class'><%= instructor %></div>        </div>     </a>    ";
     };
 
     ClassPicker.prototype.dateSelected = function() {

@@ -32,40 +32,42 @@ window.ClassPicker = class ClassPicker
 
 
   renderDates: ->
+    html = _.template(this.selectDatesTemplate())
+
     for day in @options.days
-      new_node = $("<a href='#'><div class='date'>#{day.date}</div></a>")
-      new_node.data("choice", day.date)
+      new_node = $( html({date: day.date }) )
       @dates_node.append(new_node)
 
     @dates_node.find("a").click (e) =>
       @state = "times"
-      @date_selected = $(e.currentTarget).data('choice')
+      @date_selected = $(e.currentTarget).data('selection')
       e.preventDefault()
       this.render()
 
 
   renderTimes: ->
+    html = _.template(this.selectTimesTemplate())
+
     for opt in @options.days[0].times
-      new_node = $("<a href='#'><div class='time'>#{opt.time}</div></a>")
-      new_node.data("choice", opt.time)
+      new_node = $( html({time: opt.time}) )
       @times_node.append(new_node)
 
     @times_node.find("a").click (e) =>
       @state = "classes"
-      @time_selected = $(e.currentTarget).data('choice')
+      @time_selected = $(e.currentTarget).data('selection')
       e.preventDefault()
       this.render()
 
   renderClasses: ->
-    for klass in @options.days[0].times[0].classes
-      html = _.template(this.classTemplate())
+    html = _.template(this.selectClassesTemplate())
 
+    for klass in @options.days[0].times[0].classes
       new_node = $( html({avatar: klass.avatar, instructor: klass.instructor, class_id: klass.class_id }) )
       @classes_node.append(new_node)
 
     @classes_node.find("a").click (e) =>
       @state = "completed"
-      @class_selected = $(e.currentTarget).data('choice')
+      @class_selected = $(e.currentTarget).data('selection')
       @class_id = $(e.currentTarget).data('class-id')
       e.preventDefault()
       this.render()
@@ -85,14 +87,29 @@ window.ClassPicker = class ClassPicker
     # $(parent_node).find("a").unbind 'click'
 
 
-  classTemplate: ->
-    "<a href='#' data-choice='<%= instructor %>' data-class-id='<%= class_id %>'>
+
+  selectDatesTemplate: ->
+    "<a href='#' data-selection='<%= date %>'>
+      <div class='date'><%= date %></div>
+     </a>
+    "
+
+  selectTimesTemplate: ->
+    "<a href='#' data-selection='<%= time %>'>
+      <div class='time'><%= time %></div>
+     </a>
+    "
+
+  selectClassesTemplate: ->
+    "<a href='#' data-selection='<%= instructor %>' data-class-id='<%= class_id %>'>
         <div class='avatar'>
           <img src='<%= avatar %>' width='70' height='80' />
           <div class='class'><%= instructor %></div>
         </div>
-      </a>
+     </a>
     "
+
+
 
 
   dateSelected: ->
