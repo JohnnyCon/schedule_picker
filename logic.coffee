@@ -1,10 +1,9 @@
-
 window.ClassPicker = class ClassPicker
   constructor: (@root, @options) ->
     @root_node    = $(".#{root}").first()
-    @dates_node   = $(".#{root} > .dates").first()
-    @times_node   = $(".#{root} > .times").first()
-    @classes_node = $(".#{root} > .classes").first()
+    @dates_node   = $(".#{root} li.dates").first()
+    @times_node   = $(".#{root} li.times").first()
+    @classes_node = $(".#{root} li.classes").first()
     @date_selected = "none"
     @time_selected = "none"
     @class_selected = "none"
