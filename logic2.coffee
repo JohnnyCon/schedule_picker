@@ -2,19 +2,21 @@
 window.ClassPicker = class ClassPicker
   constructor: (@root, @options) ->
     @root_node    = $(".#{@root}").first()
-    @dates_node   = $(".#{@root} > .dates").first()
-    @times_node   = $(".#{@root} > .times").first()
-    @classes_node = $(".#{@root} > .classes").first()
-    @date_selected = ""
-    @time_selected = ""
-    @class_selected = ""
+    @dates_node   = $(".#{@root} li.dates").first()
+    @times_node   = $(".#{@root} li.times").first()
+    @classes_node = $(".#{@root} li.classes").first()
+    @date_selected = "none"
+    @time_selected = "none"
+    @class_selected = "none"
     @class_id = 0
+
+  initialize: ->
     @state = "dates"
     this.render()
 
   render: ->
     # set visability
-    for node in @root_node.children(".step")
+    for node in @root_node.find(".step")
       if $(node).hasClass(@state)
         $(node).show()
       else
@@ -27,12 +29,9 @@ window.ClassPicker = class ClassPicker
       when "completed" then this.renderCompleted()
 
     this.updateSelections()
-    this.updateCrumbs()
-    this.attach_handlers()
 
 
   renderDates: ->
-    @dates_node.find("a").remove()
     html = _.template(this.selectDatesTemplate())
 
     for day in @options.days
@@ -47,7 +46,6 @@ window.ClassPicker = class ClassPicker
 
 
   renderTimes: ->
-    @times_node.find("a").remove()
     html = _.template(this.selectTimesTemplate())
 
     for opt in @options.days[0].times
@@ -61,7 +59,6 @@ window.ClassPicker = class ClassPicker
       this.render()
 
   renderClasses: ->
-    @classes_node.find("a").remove()
     html = _.template(this.selectClassesTemplate())
 
     for klass in @options.days[0].times[0].classes
@@ -85,45 +82,6 @@ window.ClassPicker = class ClassPicker
     @root_node.find("#class-selected").first().text(this.classSelected())
 
 
-  updateCrumbs: ->
-    breadcrumbs = @root_node.find("span[data-path]").not("span[data-path='start']")
-    breadcrumbs.hide()
-
-    switch @state
-      when "times"
-        @root_node.find("span[data-path='date']").show()
-      when "classes"
-        @root_node.find("span[data-path='date']").show()
-        @root_node.find("span[data-path='time']").show()
-      when "completed"
-        @root_node.find("span[data-path='date']").show()
-        @root_node.find("span[data-path='time']").show()
-        @root_node.find("span[data-path='class']").show()
-
-  attach_handlers: ->
-    breadcrumbs = @root_node.find("span[data-path]")
-    breadcrumbs.unbind 'click'
-
-    nodes = []
-
-    switch @state
-      when "times"
-        nodes.push @root_node.find("span[data-path='start']")
-        nodes.push @root_node.find("span[data-path='date']")
-      when "classes"
-        nodes.push @root_node.find("span[data-path='start']")
-        nodes.push @root_node.find("span[data-path='date']")
-        nodes.push @root_node.find("span[data-path='time']")
-      when "completed"
-        nodes.push @root_node.find("span[data-path='start']")
-        nodes.push @root_node.find("span[data-path='date']")
-        nodes.push @root_node.find("span[data-path='time']")
-        nodes.push @root_node.find("span[data-path='class']")
-
-    for nav in nodes
-      nav.click (e) =>
-        @state = $(e.currentTarget).data('next')
-        this.render()
 
   remove_handlers: (parent_node) ->
     # $(parent_node).find("a").unbind 'click'
@@ -179,3 +137,4 @@ window.ClassPicker = class ClassPicker
     #   else
     #     @remove_handlers(node)
     #     $(node).hide()
+

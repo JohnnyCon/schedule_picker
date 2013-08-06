@@ -41,9 +41,10 @@
 
 
       <div class="container class1">
-        <strong>Date: <span id="date-selected"></span></strong> |
-        <strong>Time: <span id="time-selected"></span></strong> |
-        <strong>Class: <span id="class-selected"></span></strong>
+        <span data-path='start' data-next='dates'>  <a href='#'>Start</a> </span>
+        <span data-path='date' data-next='times'> -> <a href='#'><span id="date-selected"></span></a> </span>
+        <span data-path='time' data-next='classes'> -> <a href='#'><span id="time-selected"></span></a> </span>
+        <span data-path='class' data-next='completed'> -> <a href='#'><span id="class-selected"></span></a> </span>
 
         <br><br>
         <h3>Introduction to UGO</h3>
@@ -72,9 +73,10 @@
     <td>
 
       <div class="container class2">
-        <strong>Date: <span id="date-selected"></span></strong> |
-        <strong>Time: <span id="time-selected"></span></strong> |
-        <strong>Class: <span id="class-selected"></span></strong>
+        <span data-path='start' data-next='dates'>  <a href='#'>Start</a> </span>
+        <span data-path='date' data-next='times'> -> <a href='#'><span id="date-selected"></span></a> </span>
+        <span data-path='time' data-next='classes'> -> <a href='#'><span id="time-selected"></span></a> </span>
+        <span data-path='class' data-next='completed'> -> <a href='#'><span id="class-selected"></span></a> </span>
 
         <br><br>
         <h3>Greetings in a professional setting</h3>
@@ -107,10 +109,8 @@
   $(document).ready(function() {
 
     class1 = new ClassPicker("class1", schedule);
-    class1.initialize();
-
     class2 = new ClassPicker("class2", schedule2);
-    class2.initialize();
+
   });
 
 

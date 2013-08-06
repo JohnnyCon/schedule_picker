@@ -1,0 +1,132 @@
+<html>
+<head>
+  <title>Scheduler jQuery</title>
+  <script src="./data.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
+  <script src="./logic2.js"></script>
+
+  <style>
+    .container {
+      width: 500px;
+      height: 400px;
+      border-width: 1px;
+      border-color: lightblue;
+      border-style: solid;
+      margin:10px;
+    }
+
+    .date, .time, .class {
+      padding: 14px;
+      margin-top: 8px;
+      background-color: #e4e4e4;
+    }
+
+    .avatar {
+      float: left;
+      margin: 8px;
+      width: 120px;
+      font-size: 10px;
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+<div class='class-scheduler'>
+  <div class='class class1'>
+    <ol class='scheduler-breadcrumbs'>
+      <li class='scheduler-breadcrumb'>
+        <strong>
+          Date:
+          <span id='date-selected'></span>
+        </strong>
+        <i class='ss-icon'>navigateright</i>
+      </li>
+      <li class='scheduler-breadcrumb'>
+        <strong>
+          Time:
+          <span id='time-selected'></span>
+        </strong>
+        <i class='ss-icon'>navigateright</i>
+      </li>
+      <li class='scheduler-breadcrumb'>
+        <strong>
+          Class:
+          <span id='class-selected'></span>
+        </strong>
+      </li>
+    </ol>
+    <h3 class='class-title'>Introduction to UGO</h3>
+    <ol class='steps'>
+      <li class='dates step'>
+        <strong>Choose a date</strong>
+      </li>
+      <li class='times step'>
+        <strong>Choose a time</strong>
+      </li>
+      <li class='classes step'>
+        <strong>Choose a class</strong>
+      </li>
+      <li class='completed step'>
+        <strong>Congratulations! You have Selected a class</strong>
+      </li>
+    </ol>
+  </div>
+  <div class='class class2'>
+    <ol class='scheduler-breadcrumbs'>
+      <li class='scheduler-breadcrumb'>
+        <strong>
+          Date:
+          <span id='date-selected'></span>
+        </strong>
+        <i class='ss-icon'>navigateright</i>
+      </li>
+      <li class='scheduler-breadcrumb'>
+        <strong>
+          Time:
+          <span id='time-selected'></span>
+        </strong>
+        <i class='ss-icon'>navigateright</i>
+      </li>
+      <li class='scheduler-breadcrumb'>
+        <strong>
+          Class:
+          <span id='class-selected'></span>
+        </strong>
+      </li>
+    </ol>
+    <h3 class='class-title'>Greetings in a professional setting</h3>
+    <ol class='steps'>
+      <li class='dates step'>
+        <strong>Choose a date</strong>
+      </li>
+      <li class='times step'>
+        <strong>Choose a time</strong>
+      </li>
+      <li class='classes step'>
+        <strong>Choose a class</strong>
+      </li>
+      <li class='completed step'>
+        <strong>Congratulations! You have Selected a class</strong>
+      </li>
+    </ol>
+  </div>
+</div>
+<script>
+  $(document).ready(function() {
+
+    class1 = new ClassPicker("class1", schedule);
+    class1.initialize();
+
+    class2 = new ClassPicker("class2", schedule2);
+    class2.initialize();
+  });
+</script>
+
+</body>
+
+
+</html>

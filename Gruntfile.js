@@ -12,7 +12,8 @@ module.exports = function(grunt) {
     coffee: {
       compile: {
         files: {
-          'logic.js': 'logic.coffee' // 1:1 compile
+          'logic.js': 'logic.coffee',
+          'logic2.js': 'logic2.coffee' // 1:1 compile
         }
       }
     }
