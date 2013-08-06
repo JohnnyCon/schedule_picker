@@ -14,7 +14,7 @@ schedule =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -23,7 +23,7 @@ schedule =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -32,7 +32,7 @@ schedule =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -41,7 +41,7 @@ schedule =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -50,7 +50,7 @@ schedule =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -64,7 +64,7 @@ schedule =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -73,7 +73,7 @@ schedule =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -82,7 +82,7 @@ schedule =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -91,7 +91,7 @@ schedule =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -100,7 +100,7 @@ schedule =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -114,7 +114,7 @@ schedule =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -123,7 +123,7 @@ schedule =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -132,7 +132,7 @@ schedule =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -141,7 +141,7 @@ schedule =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -150,7 +150,7 @@ schedule =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -173,7 +173,7 @@ schedule =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -182,7 +182,7 @@ schedule =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -191,7 +191,7 @@ schedule =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -200,7 +200,7 @@ schedule =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -209,7 +209,7 @@ schedule =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -223,7 +223,7 @@ schedule =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -232,7 +232,7 @@ schedule =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -241,7 +241,7 @@ schedule =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -250,7 +250,7 @@ schedule =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -259,7 +259,7 @@ schedule =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -273,7 +273,7 @@ schedule =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -282,7 +282,7 @@ schedule =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -291,7 +291,7 @@ schedule =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -300,7 +300,7 @@ schedule =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -309,7 +309,7 @@ schedule =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -334,7 +334,7 @@ schedule =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -343,7 +343,7 @@ schedule =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -352,7 +352,7 @@ schedule =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -361,7 +361,7 @@ schedule =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -370,7 +370,7 @@ schedule =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -384,7 +384,7 @@ schedule =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -393,7 +393,7 @@ schedule =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -402,7 +402,7 @@ schedule =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -411,7 +411,7 @@ schedule =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -420,7 +420,7 @@ schedule =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -434,7 +434,7 @@ schedule =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -443,7 +443,7 @@ schedule =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -452,7 +452,7 @@ schedule =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -461,7 +461,7 @@ schedule =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -470,7 +470,7 @@ schedule =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -508,7 +508,7 @@ var schedule2 =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -517,7 +517,7 @@ var schedule2 =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -526,7 +526,7 @@ var schedule2 =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -535,7 +535,7 @@ var schedule2 =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -544,7 +544,7 @@ var schedule2 =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -558,7 +558,7 @@ var schedule2 =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -567,7 +567,7 @@ var schedule2 =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -576,7 +576,7 @@ var schedule2 =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -585,7 +585,7 @@ var schedule2 =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -594,7 +594,7 @@ var schedule2 =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -608,7 +608,7 @@ var schedule2 =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -617,7 +617,7 @@ var schedule2 =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -626,7 +626,7 @@ var schedule2 =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -635,7 +635,7 @@ var schedule2 =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -644,7 +644,7 @@ var schedule2 =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -667,7 +667,7 @@ var schedule2 =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -676,7 +676,7 @@ var schedule2 =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -685,7 +685,7 @@ var schedule2 =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -694,7 +694,7 @@ var schedule2 =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -703,7 +703,7 @@ var schedule2 =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -717,7 +717,7 @@ var schedule2 =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -726,7 +726,7 @@ var schedule2 =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -735,7 +735,7 @@ var schedule2 =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -744,7 +744,7 @@ var schedule2 =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -753,7 +753,7 @@ var schedule2 =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -767,7 +767,7 @@ var schedule2 =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -776,7 +776,7 @@ var schedule2 =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -785,7 +785,7 @@ var schedule2 =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -794,7 +794,7 @@ var schedule2 =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -803,7 +803,7 @@ var schedule2 =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -828,7 +828,7 @@ var schedule2 =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -837,7 +837,7 @@ var schedule2 =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -846,7 +846,7 @@ var schedule2 =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -855,7 +855,7 @@ var schedule2 =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -864,7 +864,7 @@ var schedule2 =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -878,7 +878,7 @@ var schedule2 =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -887,7 +887,7 @@ var schedule2 =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -896,7 +896,7 @@ var schedule2 =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -905,7 +905,7 @@ var schedule2 =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -914,7 +914,7 @@ var schedule2 =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -928,7 +928,7 @@ var schedule2 =
           "classes" : [
             {
               "instructor" : "Sebastian Thrun",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://si0.twimg.com/profile_images/1478766947/me.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -937,7 +937,7 @@ var schedule2 =
             },
             {
               "instructor" : "Andrew Ng",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "https://d2wvvaown1ul17.cloudfront.net/site-static/pages/home/about/team/andrew.png",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -946,7 +946,7 @@ var schedule2 =
             },
             {
               "instructor" : "Daphne Koller",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -955,7 +955,7 @@ var schedule2 =
             },
             {
               "instructor" : "Alex Aiken",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,
@@ -964,7 +964,7 @@ var schedule2 =
             },
             {
               "instructor" : "Time Roughgarden",
-              "instructor_avatar" : "http://www.example.com",
+              "avatar" : "http://i.pgcdn.com/images/profile/user_profile_silhouette.gif",
               "class_open" : true,
               "slots_text" : "3 of 4 filled",
               "slots_filled" : 3,

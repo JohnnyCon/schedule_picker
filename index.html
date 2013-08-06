@@ -3,6 +3,7 @@
   <title>Scheduler jQuery</title>
   <script src="./data.js"></script>
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
   <script src="./logic.js"></script>
 
   <style>
@@ -19,6 +20,13 @@
       padding: 14px;
       margin-top: 8px;
       background-color: #e4e4e4;
+    }
+
+    .avatar {
+      float: left;
+      margin: 8px;
+      width: 120px;
+      font-size: 10px;
     }
 
   </style>
@@ -41,19 +49,19 @@
         <h3>Introduction to UGO</h3>
 
         <div class="dates step">
-          <strong>Choose a date</strong>
+          <strong>Choose a date</strong><br>
         </div>
 
         <div class="times step">
-          <strong>Choose a time</strong>
+          <strong>Choose a time</strong><br>
         </div>
 
         <div class="classes step">
-          <strong>Choose a class</strong>
+          <strong>Choose a class</strong><br>
         </div>
 
         <div class="completed step">
-          <strong>Congratulations! You have Selected a class</strong>
+          <strong>Congratulations! You have Selected a class</strong><br>
         </div>
       </div>
 
@@ -72,19 +80,19 @@
         <h3>Greetings in a professional setting</h3>
 
         <div class="dates step">
-          <strong>Choose a date</strong>
+          <strong>Choose a date</strong><br>
         </div>
 
         <div class="times step">
-          <strong>Choose a time</strong>
+          <strong>Choose a time</strong><br>
         </div>
 
         <div class="classes step">
-          <strong>Choose a class</strong>
+          <strong>Choose a class</strong><br>
         </div>
 
         <div class="completed step">
-          <strong>Congratulations! You have Selected a class</strong>
+          <strong>Congratulations! You have Selected a class</strong><br>
         </div>
       </div>
 
@@ -104,6 +112,8 @@
     class2 = new ClassPicker("class2", schedule2);
     class2.initialize();
   });
+
+
 
 </script>
 

@@ -84,12 +84,16 @@
     };
 
     ClassPicker.prototype.renderClasses = function() {
-      var klass, new_node, _i, _len, _ref,
+      var html, klass, new_node, _i, _len, _ref,
         _this = this;
       _ref = this.options.days[0].times[0].classes;
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         klass = _ref[_i];
-        new_node = $("<a href='#'><div class='class'>" + klass.instructor + "</div></a>");
+        html = _.template(this.classTemplate());
+        new_node = $(html({
+          avatar: klass.avatar,
+          instructor: klass.instructor
+        }));
         new_node.data({
           "choice": klass.instructor,
           "class_id": klass.class_id
@@ -114,6 +118,10 @@
     };
 
     ClassPicker.prototype.remove_handlers = function(parent_node) {};
+
+    ClassPicker.prototype.classTemplate = function() {
+      return "<a href='#'>        <div class='avatar'>          <img src='<%= avatar %>' width='70' height='80' />          <div class='class'><%= instructor %></div>        </div>      </a>    ";
+    };
 
     ClassPicker.prototype.dateSelected = function() {
       return this.date_selected;

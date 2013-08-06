@@ -58,7 +58,9 @@ window.ClassPicker = class ClassPicker
 
   renderClasses: ->
     for klass in @options.days[0].times[0].classes
-      new_node = $("<a href='#'><div class='class'>#{klass.instructor}</div></a>")
+      html = _.template(this.classTemplate())
+
+      new_node = $( html({avatar: klass.avatar, instructor: klass.instructor}) )
       new_node.data({"choice" : klass.instructor, "class_id" : klass.class_id })
       @classes_node.append(new_node)
 
@@ -82,6 +84,16 @@ window.ClassPicker = class ClassPicker
 
   remove_handlers: (parent_node) ->
     # $(parent_node).find("a").unbind 'click'
+
+
+  classTemplate: ->
+    "<a href='#'>
+        <div class='avatar'>
+          <img src='<%= avatar %>' width='70' height='80' />
+          <div class='class'><%= instructor %></div>
+        </div>
+      </a>
+    "
 
 
   dateSelected: ->
